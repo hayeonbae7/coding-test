@@ -1,7 +1,4 @@
 function solution(my_string) {
-    var answer = '';
-    for(let i=my_string.length-1; i>=0; i--){
-        answer+=my_string[i]
-    }
+    var answer = [...my_string].reverse().join('')
     return answer;
 }
